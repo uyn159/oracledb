@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  oracle:
+    image: harbor.cyberlogitec.com.vn:5005/oracledb/oracledb:21.3.0-ee
+    container_name: oracle
+    ports: #1521 (Oracle Listener), 5500 (OEM Express), 2484 (TCPS Listener Port if TCPS is enabled).
+      - 1521:1521
+      - 5500:5500
+      - 2484:2484
+    environment:
+      # - ORACLE_SID= #(default for 23ai Free Edition: FREE; all others, ORCLCDB)
+      # - ORACLE_PDB= #(default for 23ai Free Edition: FREEPDB1; all others, ORCLPDB1).
+      # - ORACLE_CHARACTERSET #(default: AL32UTF8)
+      - ORACLE_PWD=yoursecurepassword #The Oracle Database SYS, SYSTEM and PDBADMIN password (default: auto generated).
+      - ENABLE_ARCHIVELOG=true #To enable archive log mode when creating the database (default: false).
+      - ENABLE_FORCE_LOGGING=true #To enable force logging mode when creating the database (default: false).
+      - ENABLE_TCPS=true #To enable TCPS connections for Oracle Database.
+    volumes:
+      - C:\Users\uyn.le\oracle\scripts\startup:\opt\oracle\scripts\startup #Custom scripts to be run after database startup.
+      - C:\Users\uyn.le\oracle\scripts\setup:\opt\oracle\scripts\setup #Custom scripts to be run after database setup
+      - C:\Users\uyn.le\oracle\oradata:\opt\oracle\oradata #The data volume to use for the database.
