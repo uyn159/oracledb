@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   oracle:
-    image: harbor.cyberlogitec.com.vn:5005/oracledb/oracledb:21.3.0-ee
+    image: harbor.cyberlogitec.com.vn:5005\oracledb\oracledb:21.3.0-ee
     container_name: oracle
     ports: #1521 (Oracle Listener), 5500 (OEM Express), 2484 (TCPS Listener Port if TCPS is enabled).
       - 1521:1521
