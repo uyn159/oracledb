@@ -24,17 +24,32 @@
 * Docker registry: Store and distribute Docker images. Ex: DockerHub, Harbor,....
 ![]()
 ![]()
-## Docker component
+## 8 Key Components of Docker
+
+* Docker Engine:
+* Docker Container: An independent running environment for application (running process)
 * Docker File: A blueprint to create a Docker image 
 * Docker Image: A template to create Docker containers 
-* Docker Container: An independent running environment for application (running process) 
+ ```bash
+.
+├── Docker Containers
+│   ├── Docker Engine
+|        └── Docker Desktop
+│   ├── Docker Image
+|        ├── Docker Hub
+|        └── Docker File
+│   └── Run
+|        ├── docker run
+|        └── docker compose
+├── dir3
+├── file_in_root.ext
+```
 * **Note:** Docker image can create multiple Docker containers, but a Docker container is only created from one Docker image
   ![]()
 ### Docker File
+* 
 ### Docker Image
 ### Docker Container
-
-
 
 * Prerequisites (e.g., software dependencies, operating system compatibility)
 * Step-by-step instructions (e.g., cloning the repository, running installation scripts)
