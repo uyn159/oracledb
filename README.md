@@ -28,7 +28,7 @@
 * Docker File: A blueprint to create a Docker image 
 * Docker Image: A template to create Docker containers 
 * Docker Container: An independent running environment for application (running process) 
-**Note:** Docker image can create multiple Docker containers, but a Docker container is only created from one Docker image
+* **Note:** Docker image can create multiple Docker containers, but a Docker container is only created from one Docker image
   ![]()
 ### Docker File
 ### Docker Image
