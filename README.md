@@ -28,21 +28,26 @@
 
 * Docker Engine:
 * Docker Container: An independent running environment for application (running process)
-* Docker File: A blueprint to create a Docker image 
-* Docker Image: A template to create Docker containers 
+* Docker Images: A template to create Docker containers
+* Docker File: A blueprint to create a Docker image
+* Docker Hub:
+* Docker Desktop: 
+* Docker compose:
+* Docker volumes:
  ```bash
-.
 ├── Docker Containers
 │   ├── Docker Engine
-|        └── Docker Desktop
+|          ├── Command Line Interface (CLI)
+|          └── Docker Desktop (client)
 │   ├── Docker Image
 |        ├── Docker Hub
+|              ├── `docker push`
+|              └── `docker pull`
 |        └── Docker File
+|              └── `docker build`
 │   └── Run
-|        ├── docker run
-|        └── docker compose
-├── dir3
-├── file_in_root.ext
+|        ├── `docker run`
+|        └── `docker compose`
 ```
 * **Note:** Docker image can create multiple Docker containers, but a Docker container is only created from one Docker image
   ![]()
