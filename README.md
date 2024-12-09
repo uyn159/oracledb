@@ -15,8 +15,7 @@
 ## Installation Docker
 ### Windows
 * Link: (https://docs.Docker.com/desktop/install/windows-install/)
-* Click: (/image/1.png)
-Explain how to install your project. This might include:
+* Click: ![](image/1.png)
 
 * Prerequisites (e.g., software dependencies, operating system compatibility)
 * Step-by-step instructions (e.g., cloning the repository, running installation scripts)
